@@ -1,13 +1,17 @@
-﻿using System;
-using System.Text.Json;
-using MAUIPETS.Models;
+﻿namespace MAUIPETS.Services;
 
-namespace MAUIPETS.Services;
-
-public 	class PetService
+public class PetService
 {
     List<Pet> petList;
-    
+    string _jsonContent;
+
+    private async Task FillJsonContent()
+    {
+        using var stream = await FileSystem.OpenAppPackageFileAsync("pets.json");
+        using var reader = new StreamReader(stream);
+
+        _jsonContent = reader.ReadToEnd();    }
+
     public async Task<List<Pet>> GetPets()
     {
         if (petList?.Count > 0)
@@ -15,16 +19,8 @@ public 	class PetService
 
         try
         {
-            var filePath = Path.Combine(AppContext.BaseDirectory, "Data", "pets.json");
-            
-            if (!File.Exists(filePath))
-            {
-                Debug.WriteLine($"Arquivo não encontrado: {filePath}");
-                return new List<Pet>();
-            }
-
-            var json = await File.ReadAllTextAsync(filePath);
-            petList = JsonSerializer.Deserialize<List<Pet>>(json) ?? new List<Pet>();
+            await FillJsonContent();
+            petList = JsonSerializer.Deserialize<List<Pet>>(_jsonContent) ?? new List<Pet>();
         }
         catch (Exception ex)
         {

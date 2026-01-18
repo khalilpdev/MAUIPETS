@@ -43,6 +43,8 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		
+		<!-- Data Files -->
 	</ItemGroup>
 
 	<ItemGroup>
@@ -57,7 +59,6 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Models\" />
-	  <Folder Include="Data\" />
 	  <Folder Include="Views\" />
 	  <Folder Include="ViewModels\" />
 	  <Folder Include="Services\" />
@@ -92,10 +93,5 @@
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.Maui.Controls" Version="10.0.1" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
-	</ItemGroup>
-	<ItemGroup>
-	  <None Update="Data\pets.json">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
 	</ItemGroup>
 </Project>
