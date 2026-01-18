@@ -43,7 +43,7 @@ public partial class HomePageViewModel : BaseViewModel
         {
             Debug.WriteLine($"Unable to get Pets: {ex.Message}");
             Console.WriteLine("No encontramos Mascotas");
-            await Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
+            await Shell.Current.DisplayAlertAsync("Error!", ex.Message, "OK");
         }
         finally
         {
@@ -56,12 +56,12 @@ public partial class HomePageViewModel : BaseViewModel
     [RelayCommand]
     async Task GoToDetails()
     {
-        if (selectedPet == null)
+        if (SelectedPet == null)
             return;
 
         var data = new Dictionary<string, object>
             {
-                {"Pet", selectedPet }
+                {"Pet", SelectedPet }
             };
 
         await Shell.Current.GoToAsync(nameof(PetDetailsView), true, data);

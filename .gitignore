@@ -1,0 +1,166 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Local History for Visual Studio
+.localhistory/
+
+# Visual Studio History (VSHistory) files
+.vshistory/
+
+# BeatPulse healthcheck temp database
+healthchecksdb
+
+# Backup & report files from converting an old project file
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+ServiceFabricBackup/
+*.rptproj.bak
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet Credential Manager plugin
+!.nuget/plugins/Microsoft.Net.Sdk.Localization.Tasks/Microsoft.Net.Sdk.Localization.Tasks.csproj
+
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
+
+# Nuget personal access tokens and Credentials
+credentials.json
+
+# dotenv files
+.env
+.env.local
+.env.*.local
+
+# MAUI specific
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Android specific
+.gradle/
+build/
+*.apk
+*.aab
+*.aars
+local.properties
+*.jks
+*.keystore
+
+# iOS specific
+.xcworkspace/
+Pods/
+*.xcodeproj/
+DerivedData/
+*.mobileprovision
+*.ipa
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+.coverage/
+coverage/
+TestResults/
+
+# Build artifacts
+artifacts/
+
+# Rider specific
+.idea/
+*.sln.iml
+.rider/
+
+# User-specific Visual Studio files
+.settings/
+*.VC.db
+*.VC.VC.opendb
+
+# Azure Toolkit for Visual Studio cache
+.azureCDN/
+
+# Files built by Visual Studio
+*.iobj
+*.ipdb
+*.ipdb
+
+# Fody - auto-generated files
+FodyWeavers.xsd
+
+# Exclude OpenSSL files if used
+openssl*
+
+# Runtime files
+*.so
+*.dylib
+.framework/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraformrc
+terraform.tfvars

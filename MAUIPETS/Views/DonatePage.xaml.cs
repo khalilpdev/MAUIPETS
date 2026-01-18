@@ -16,7 +16,7 @@ public partial class DonatePage : ContentPage
         donate50.BackgroundColor = Color.FromArgb("#FFC300");
         donate100.BackgroundColor = Color.FromArgb("#FFC300");
         Donate.Text = "Donate $25";
-        await Imagedog.ScaleTo(1.5, 1000, Easing.Linear);
+        await Imagedog.ScaleToAsync(1.5, 1000, Easing.Linear);
     }
 
     private async void donate50_Clicked(object sender, EventArgs e)
@@ -26,7 +26,7 @@ public partial class DonatePage : ContentPage
         donate25.BackgroundColor = Color.FromArgb("#FFC300");
         donate100.BackgroundColor = Color.FromArgb("#FFC300");
         Donate.Text = "Donate $50";
-        await Imagedog.ScaleTo(1.8, 1000, Easing.Linear);
+        await Imagedog.ScaleToAsync(1.8, 1000, Easing.Linear);
     }
 
     private async void donate100_Clicked(object sender, EventArgs e)
@@ -36,7 +36,7 @@ public partial class DonatePage : ContentPage
         donate25.BackgroundColor = Color.FromArgb("#FFC300");
         donate50.BackgroundColor = Color.FromArgb("#FFC300");
         Donate.Text = "Donate $100";
-        await Imagedog.ScaleTo(2.5, 1000, Easing.Linear);
+        await Imagedog.ScaleToAsync(2.5, 1000, Easing.Linear);
     }
 
     private async void Donate_Clicked(object sender, EventArgs e)

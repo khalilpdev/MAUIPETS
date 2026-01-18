@@ -1,4 +1,14 @@
 # MAUIPETS
+
+Atualizado para .net 10 e Ler os dados do arquivo Data\pets.json
+Desta forma podemos alterar os dados conforme nossa necessidade, 
+corrigindo as URLs inválidas.
+
+Updated to .NET 10 and reading data from the Data\pets.json file
+This way we can modify the data according to our needs,
+fixing invalid URLs.
+
+# CREDITS TO:
 Proyect for .NET MAUI CHALLENGE, MAUIPETS is a demo Adoption Pet App.
 #[ MAUIPETS](https://github.com/BryanOroxon/MAUIPETS " MAUIPETS")
 
